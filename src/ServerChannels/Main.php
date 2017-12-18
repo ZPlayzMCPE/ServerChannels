@@ -24,7 +24,7 @@ class Main extends PluginBase{
 	
 	//About Plugin Const
 	const PRODUCER = "EvolSoft";
-	const VERSION = "1.1";
+	const VERSION = "2.0.0";
 	const MAIN_WEBSITE = "http://www.evolsoft.tk";
 	//Other Const
 	//Prefix
@@ -99,7 +99,7 @@ class Main extends PluginBase{
     public function initializeChannelPermissions(){
     	$channels = $this->getAllChannels();
     	for($i = 0; $i < count($channels); $i++){
-    		$permission = new Permission("serverchannels.channels." . strtolower($channels[$i]), "ServerChannels " . strtolower($channels[$i]) . " channel permission.");
+    		$permission = new Permission("staffchat.*" . strtolower($channels[$i]), "sc " . strtolower($channels[$i]) . " channel permission.");
     		Server::getInstance()->getPluginManager()->addPermission($permission);
     	}
     }
