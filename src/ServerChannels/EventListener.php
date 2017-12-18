@@ -44,4 +44,3 @@ class EventListener extends PluginBase implements Listener{
 	}
 
 }
-?>
