@@ -143,8 +143,8 @@ class Commands extends PluginBase implements CommandExecutor{
     						break;
     					}
     				}else{
-    					if($sender->hasPermission("serverchannels")){
-    						$sender->sendMessage($this->plugin->translateColors("&",  Main::PREFIX . "&cSubcommand &a" . $args[0] . " &cnot found. Use &a/sch help &cto show available commands"));
+    					if($sender->hasPermission("staffchat.*")){
+    						$sender->sendMessage($this->plugin->translateColors("&",  Main::PREFIX . "&cSubcommand &a" . $args[0] . " &cnot found. Use &a/sc help &cto show available commands"));
     						break;
     					}else{
     						$sender->sendMessage($this->plugin->translateColors("&", "&cYou don't have permissions to use this command"));
