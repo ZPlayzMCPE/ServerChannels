@@ -223,4 +223,3 @@ class Main extends PluginBase{
     }
     
 }
-?>
