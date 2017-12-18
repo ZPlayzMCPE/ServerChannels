@@ -1,9 +1,9 @@
-name: ServerChannels
+name: StaffChatPE
 main: ServerChannels\Main
-version: "1.1"
-api: [1.9.0]
+version: "2.0.0"
+api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
 load: STARTUP
-author: EvolSoft
+author: VMPE Development Team
 description: Create customized chat channels
 website: https://www.evolsoft.tk
 
